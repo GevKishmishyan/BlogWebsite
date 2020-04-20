@@ -1,0 +1,63 @@
+body {
+    margin: 0 auto;
+    background-color: darkgray;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#avatar {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#avatar img {
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+hr {
+    width: 90%;
+    border: 2px solid;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+tr {
+    background-color: aliceblue;
+}
+
+td {
+    padding: 7px;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: darkblue;
+    font-weight: bold;
+}
+
+#line1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: black;
+}

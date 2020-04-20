@@ -1,0 +1,14 @@
+body {
+    margin: 0 auto;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.post{
+    width: 20%;
+    height: 600px;
+    background-color: #ca3716;
+    float: left;
+    margin: auto;
+    margin: 2%;
+}
+

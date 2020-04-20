@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: error:criter:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/error/criter/unknown/criter-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/error/criter/unknown/criter-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/error/criter/unknown/criter-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
