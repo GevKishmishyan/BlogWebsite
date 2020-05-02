@@ -1,26 +1,15 @@
 <%@ page import="model.Post" %>
 <%@ page import="java.util.List" %>
-<%@ page import="manager.UserManager" %>
-<%@ page import="model.User" %>
-<%@ page import="manager.PostManager" %>
 <jsp:include page="header.jsp"/>
 
-<% List<Post> posts = (List<Post>) request.getAttribute("allPosts"); %>
 
 <section>
-    <%
-        for (Post post : posts) {
-            UserManager userManager = new UserManager();
-            User currentUser = userManager.getUserById((int) post.getAuthorId());
-    %>
-    <div class="post">
-        <%= post.getTitle() %> <br><br>
-        <%= post.getText() %> <br><br>
-        <%= post.getCategory() %> <br><br>
-        <%= currentUser.getName() %> <br>
-        <%= currentUser.getSurname() %> <br>
-    </div>
-    <% } %>
+
+    <% List<Post> posts = (List<Post>) request.getAttribute("allPosts");
+
+        for (Post post : posts) { %>
+            <h1 style="color: #ca3716;"><%= post.getTitle() %></h1>
+        <% } %>
 </section>
 
 

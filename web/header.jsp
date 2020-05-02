@@ -18,7 +18,7 @@
     <![endif]-->
     <script src="style/fixed-nav/js/responsive-nav.js"></script>
     <title>Blog</title>
-    <%--    <link rel="stylesheet" href="style/index.css">--%>
+<%--    <link rel="stylesheet" href="style/index.css">--%>
 </head>
 <body>
 <header>
@@ -27,8 +27,9 @@
     </a>
     <nav class="nav-collapse">
         <ul>
-            <%--            <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>--%>
-            <li class="menu-item"><a href="/login" data-scroll>Login</a></li>
+            <li class="menu-item"><a href="index.jsp" data-scroll>Home</a></li>
+            <li class="menu-item"><a href="blog.jsp" data-scroll>Blog</a></li>
+            <li class="menu-item"><a href="login.jsp" data-scroll>Login</a></li>
             <li class="menu-item"><a href="register.jsp" data-scroll>Register</a></li>
         </ul>
     </nav>

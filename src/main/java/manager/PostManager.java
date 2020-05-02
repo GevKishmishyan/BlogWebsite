@@ -62,23 +62,24 @@ public class PostManager {
 
     public List<Post> getAllPosts() {
         String query = "SELECT * FROM post";
-        List<Post> posts = new LinkedList<Post>();
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
+            List<Post> posts = new LinkedList<Post>();
             while (resultSet.next()) {
                 Post post = new Post();
                 post.setId(resultSet.getInt(1));
                 post.setTitle(resultSet.getString(2));
                 post.setText(resultSet.getString(3));
                 post.setCategory(Category.valueOf(resultSet.getString(4).toUpperCase()));
-                post.setAuthorId(resultSet.getInt((int) user.getId()));
+                post.setAuthorId(resultSet.getInt(5));
                 posts.add(post);
             }
+            return posts;
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return posts;
+        return null;
     }
 
     public void removePostById(int id) {

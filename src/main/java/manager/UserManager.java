@@ -14,6 +14,8 @@ public class UserManager {
 
     private Connection connection;
 
+    public boolean isLoggedIn = false;
+
     public UserManager() {
         connection = main.java.db.DBConnectionProvider.getInstance().getConnection();
     }
@@ -67,6 +69,7 @@ public class UserManager {
                 user.setSurname(resultSet.getString(3));
                 user.setEmail(resultSet.getString(4));
                 user.setPassword(resultSet.getString(5));
+                isLoggedIn = true;
                 return user;
             }
         } catch (SQLException e) {
